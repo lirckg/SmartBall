@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{C295C16C-8BA2-6D10-730A-AF031F6942C5}") = "SmartBall", "Assembly-CSharp.csproj", "{EEFF296B-F723-8355-AA4D-1BCEABD1B61F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEFF296B-F723-8355-AA4D-1BCEABD1B61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFF296B-F723-8355-AA4D-1BCEABD1B61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFF296B-F723-8355-AA4D-1BCEABD1B61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFF296B-F723-8355-AA4D-1BCEABD1B61F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
