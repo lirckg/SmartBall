@@ -23,6 +23,7 @@ public class LuncherController : MonoBehaviour {
 	void Update () {
 		//Debug.Log (this.transform.localEulerAngles.y);
 
+		// 現在の角度を取得
 		float angleY = this.transform.localEulerAngles.y;
 
 		if (directionFlag) {
@@ -31,10 +32,12 @@ public class LuncherController : MonoBehaviour {
 			this.transform.Rotate (0, -this.rotSpeed, 0);
 		}
 
+		// 回転方向調整
 		if ((angleY > 45) && (angleY < 60)) {
 			directionFlag = false;
 		}
 
+		// 回転方向調整
 		if ((angleY < 315) && (angleY > 300)) {
 			directionFlag = true;
 		}
