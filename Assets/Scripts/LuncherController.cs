@@ -21,7 +21,7 @@ public class LuncherController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (this.transform.localEulerAngles.y);
+		//Debug.Log (this.transform.localEulerAngles.y);
 
 		float angleY = this.transform.localEulerAngles.y;
 
