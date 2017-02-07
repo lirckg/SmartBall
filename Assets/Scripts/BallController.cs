@@ -4,19 +4,28 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
+
 public class BallController : MonoBehaviour {
 
 	// クリアテキスト
 	private GameObject clearText;
 
+	// コインUI
+	private GameObject coinUI;
+
 
 	// Ballオブジェクト
 	private GameObject ball;
+
+	public Sprite img2;
 
 	// Use this for initialization
 	void Start () {
 		// クリアテキストを取得
 		this.clearText = GameObject.Find ("ClearText");
+
+		// コインUI
+		this.coinUI = GameObject.Find ("CoinUI"); 
 
 		// ball オブジェクトを取得
 		this.ball = GameObject.Find ("Ball");
@@ -38,6 +47,12 @@ public class BallController : MonoBehaviour {
 		if (other.gameObject.tag == "GoalTag") {
 
 			this.clearText.GetComponent<Text> ().text = "CLEAR";
+		}
+
+		// コイン
+		if (other.gameObject.tag == "CoinTag") {
+			this.coinUI.GetComponent<Image> ().sprite = img2;
+			Destroy (other.gameObject);
 		}
 	}
 }

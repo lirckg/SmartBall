@@ -14,9 +14,12 @@ public class StageController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		// 左矢印で左に傾く
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			this.transform.Rotate (0, 0, 0.5f);
 		}
+		// 右矢印で右に傾く
 		if (Input.GetKey(KeyCode.RightArrow)) {
 			this.transform.Rotate (0, 0, -0.5f);
 		}
