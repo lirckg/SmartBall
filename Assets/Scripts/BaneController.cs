@@ -11,16 +11,35 @@ public class BaneController : MonoBehaviour {
 
 	// localY
 	private float localY;
-	float yVelocity = 0.0F;
+
+	// プッシュフラグ
+	private bool isFlag = true;
+
 	// Use this for initialization
+
+	// target
+	private Vector3 targetPosition;
+	Vector3 v = new Vector3(0, 0, 0);
+
+	float SPRING = 10;
+	float DAMPING = 0.8f;
+
 	void Start () {
+		// Rigidbody取得
 		rb = this.GetComponent<Rigidbody> ();
-		Debug.Log (this.gameObject.transform.localEulerAngles);
+
+		// y軸の傾きを取得
 		localY = this.gameObject.transform.localEulerAngles.y;
+
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
+
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			
 
@@ -29,17 +48,18 @@ public class BaneController : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other) {
 		// Ball
-		Debug.Log (other.gameObject.tag);
-		if (other.gameObject.tag == "BallTag") {
+		Debug.Log (other.gameObject.tag );
+
+		if ((other.gameObject.tag == "BallTag") && (this.isFlag == true)) {
 			localY = localY / (float)(2 * Math.PI);
 			float a = (float)(1000 * Mathf.Sin (localY));
 			float b = (float)(1000 * Mathf.Cos (localY));
-			Debug.Log (localY);
-			Debug.Log (Mathf.Sin (localY));
-			Debug.Log (Mathf.Cos (localY));
+
 
 
 			this.rb.AddForce (a, 0, -b);
+
+			this.isFlag = false;
 		}
 	}
 }

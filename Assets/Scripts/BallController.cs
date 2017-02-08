@@ -19,6 +19,8 @@ public class BallController : MonoBehaviour {
 
 	public Sprite img2;
 
+	public Quaternion gyros;
+
 	// Use this for initialization
 	void Start () {
 		// クリアテキストを取得
@@ -28,7 +30,9 @@ public class BallController : MonoBehaviour {
 		this.coinUI = GameObject.Find ("CoinUI"); 
 
 		// ball オブジェクトを取得
-		this.ball = GameObject.Find ("Ball");
+		this.ball = GameObject.Find ("BallPrefab");
+
+
 	}
 	
 	// Update is called once per frame
@@ -41,7 +45,10 @@ public class BallController : MonoBehaviour {
 
 	// 衝突判定
 	void OnTriggerEnter(Collider other) {
-		//Debug.Log (other.gameObject.tag);
+
+
+
+		Debug.Log (other.gameObject.tag);
 
 		// ゴール
 		if (other.gameObject.tag == "GoalTag") {

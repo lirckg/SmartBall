@@ -9,11 +9,17 @@ public class StageController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+		// ジャイロセンサON
+		Input.gyro.enabled = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		// ジャイロを取得
+		float gy = Input.gyro.rotationRateUnbiased.y;
+
+		this.transform.Rotate (0, 0, -gy);
 
 		// 左矢印で左に傾く
 		if (Input.GetKey (KeyCode.LeftArrow)) {
