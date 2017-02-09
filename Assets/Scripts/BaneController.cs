@@ -32,7 +32,6 @@ public class BaneController : MonoBehaviour {
 		localY = this.gameObject.transform.localEulerAngles.y;
 
 
-
 	}
 	
 	// Update is called once per frame
@@ -52,8 +51,8 @@ public class BaneController : MonoBehaviour {
 
 		if ((other.gameObject.tag == "BallTag") && (this.isFlag == true)) {
 			localY = localY / (float)(2 * Math.PI);
-			float a = (float)(1000 * Mathf.Sin (localY));
-			float b = (float)(1000 * Mathf.Cos (localY));
+			float a = (float)(2000 * Mathf.Sin (localY));
+			float b = (float)(2000 * Mathf.Cos (localY));
 
 
 
