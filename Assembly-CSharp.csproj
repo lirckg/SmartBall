@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\BarController.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
      <Compile Include="Assets\Scripts\LuncherController.cs" />
+     <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\StageController.cs" />
      <Compile Include="Assets\Scripts\StageSelectController.cs" />
