@@ -51,10 +51,13 @@
      <Compile Include="Assets\Scripts\BallController.cs" />
      <Compile Include="Assets\Scripts\BaneController.cs" />
      <Compile Include="Assets\Scripts\BarController.cs" />
+     <Compile Include="Assets\Scripts\DataBase.cs" />
+     <Compile Include="Assets\Scripts\DataTable.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
      <Compile Include="Assets\Scripts\LuncherController.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\SceneController.cs" />
+     <Compile Include="Assets\Scripts\SqliteDatabase.cs" />
      <Compile Include="Assets\Scripts\StageController.cs" />
      <Compile Include="Assets\Scripts\StageSelectController.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

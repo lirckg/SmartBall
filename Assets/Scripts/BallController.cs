@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using System.Runtime.CompilerServices;
+using System.Net.Sockets;
 
 
 public class BallController : MonoBehaviour {
@@ -17,7 +19,14 @@ public class BallController : MonoBehaviour {
 	// Ballオブジェクト
 	private GameObject ball;
 
-	public Sprite img2;
+	//
+	public Sprite star1;
+	public Sprite star2;
+	public Sprite star3;
+	private Sprite[] stars = new Sprite[3];
+
+
+	private int starCount;
 
 	public Quaternion gyros;
 
@@ -32,7 +41,12 @@ public class BallController : MonoBehaviour {
 		// ball オブジェクトを取得
 		this.ball = GameObject.Find ("BallPrefab");
 
+		starCount = -1;
 
+		this.stars [0] = this.star1;
+		this.stars [1] = this.star2;
+		this.stars [2] = this.star3;
+ 
 	}
 	
 	// Update is called once per frame
@@ -46,8 +60,6 @@ public class BallController : MonoBehaviour {
 	// 衝突判定
 	void OnTriggerEnter(Collider other) {
 
-
-
 		Debug.Log (other.gameObject.tag);
 
 		// ゴール
@@ -57,8 +69,9 @@ public class BallController : MonoBehaviour {
 		}
 
 		// コイン
-		if (other.gameObject.tag == "CoinTag") {
-			this.coinUI.GetComponent<Image> ().sprite = img2;
+		if (other.gameObject.tag == "StarTag") {
+			starCount += 1;
+			this.coinUI.GetComponent<Image> ().sprite = stars[starCount];
 			Destroy (other.gameObject);
 		}
 	}
