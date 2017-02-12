@@ -71,8 +71,14 @@ public class BallController : MonoBehaviour {
 		// コイン
 		if (other.gameObject.tag == "StarTag") {
 			starCount += 1;
-			this.coinUI.GetComponent<Image> ().sprite = stars[starCount];
+			Debug.Log (stars[starCount]);
+			this.coinUI.GetComponent<Image> ().sprite = this.stars[starCount];
 			Destroy (other.gameObject);
+		}
+
+		// Dead
+		if (other.gameObject.tag == "DeadTag") {
+			this.clearText.GetComponent<Text> ().text = "GAME OVER";
 		}
 	}
 }

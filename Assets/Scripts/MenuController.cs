@@ -18,6 +18,20 @@ public class MenuController : MonoBehaviour {
 
 	// Menuボタンが押されたとき
 	public void GetMenuButtonDown(){
-		this.menu.transform.localPosition = new Vector3 (0, -150, 0);
+		this.menu.transform.localPosition = new Vector3 ( 0, -150, 0);
+	}
+	// ReStartボタンが押されたとき
+	public void GetReStartButtonDown(){
+		Application.LoadLevel ("Stage1");
+	}
+
+	// Startボタンが押されたとき
+	public void GetStartButtonDown(){
+		this.menu.transform.localPosition = new Vector3 ( 500, -150, 0);
+	}
+
+	// Homeボタンが押されたとき
+	public void GetHomeButtonDown(){
+		Application.LoadLevel ("Main");
 	}
 }
