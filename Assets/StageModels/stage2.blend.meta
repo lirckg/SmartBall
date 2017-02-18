@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: e3afa8a0d04c549e1b31dcb4b1296bc9
+timeCreated: 1487447307
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: B1
+    100002: B2
+    100004: B3
+    100006: Board
+    100008: Dead
+    100010: DeadTag
+    100012: DeadTag1_000
+    100014: DeadTag1_002
+    100016: DeadTag_000
+    100018: DeadTag_004
+    100020: Goal
+    100022: GoalTag
+    100024: //RootNode
+    100026: W1
+    100028: W2
+    100030: W3
+    100032: W4
+    100034: W5
+    100036: W6
+    100038: W7
+    100040: W8
+    400000: B1
+    400002: B2
+    400004: B3
+    400006: Board
+    400008: Dead
+    400010: DeadTag
+    400012: DeadTag1_000
+    400014: DeadTag1_002
+    400016: DeadTag_000
+    400018: DeadTag_004
+    400020: Goal
+    400022: GoalTag
+    400024: //RootNode
+    400026: W1
+    400028: W2
+    400030: W3
+    400032: W4
+    400034: W5
+    400036: W6
+    400038: W7
+    400040: W8
+    2300000: B1
+    2300002: B2
+    2300004: B3
+    2300006: Board
+    2300008: Dead
+    2300010: DeadTag
+    2300012: DeadTag1_000
+    2300014: DeadTag1_002
+    2300016: DeadTag_000
+    2300018: DeadTag_004
+    2300020: Goal
+    2300022: GoalTag
+    2300024: W1
+    2300026: W2
+    2300028: W3
+    2300030: W4
+    2300032: W5
+    2300034: W6
+    2300036: W7
+    2300038: W8
+    3300000: B1
+    3300002: B2
+    3300004: B3
+    3300006: Board
+    3300008: Dead
+    3300010: DeadTag
+    3300012: DeadTag1_000
+    3300014: DeadTag1_002
+    3300016: DeadTag_000
+    3300018: DeadTag_004
+    3300020: Goal
+    3300022: GoalTag
+    3300024: W1
+    3300026: W2
+    3300028: W3
+    3300030: W4
+    3300032: W5
+    3300034: W6
+    3300036: W7
+    3300038: W8
+    4300000: Goal
+    4300002: W1
+    4300004: W2
+    4300006: W3
+    4300008: W4
+    4300010: W5
+    4300012: W6
+    4300014: W7
+    4300016: W8
+    4300018: B1
+    4300020: Board
+    4300022: B2
+    4300024: B3
+    4300026: GoalTag
+    4300028: Dead
+    4300030: DeadTag_004
+    4300032: DeadTag1_002
+    4300034: DeadTag
+    4300036: DeadTag_000
+    4300038: DeadTag1_000
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

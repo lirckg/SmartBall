@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\BallController.cs" />
      <Compile Include="Assets\Scripts\BaneController.cs" />
      <Compile Include="Assets\Scripts\BarController.cs" />
+     <Compile Include="Assets\Scripts\BoardMoveController.cs" />
      <Compile Include="Assets\Scripts\DataBase.cs" />
      <Compile Include="Assets\Scripts\DataTable.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />

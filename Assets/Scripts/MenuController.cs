@@ -23,6 +23,7 @@ public class MenuController : MonoBehaviour {
 	// ReStartボタンが押されたとき
 	public void GetReStartButtonDown(){
 		Application.LoadLevel ("Stage1");
+
 	}
 
 	// Startボタンが押されたとき
